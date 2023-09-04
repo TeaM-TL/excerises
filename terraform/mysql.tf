@@ -7,8 +7,8 @@ resource "random_password" "mysql" {
 resource "aws_rds_cluster" "mysql" {
   cluster_identifier      = "wp-cluster"
   engine                  = "aurora-mysql"
-  engine_version          = "5.7.mysql_aurora.2.11.0"
-  availability_zones      = ["eu-central-1a", "eu-central-1b", "eu-central-1c"]
+  # engine_version          = "5.7.mysql_aurora.2.11.0"
+  # availability_zones      = ["us-east-1"]
   database_name           = "wp_db"
   master_username         = "wp_user"
   master_password         = random_password.mysql.result
