@@ -1,0 +1,2 @@
+export AWS_PROFILE=terraform
+export TF_VAR_myip="/32"
