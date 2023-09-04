@@ -1,5 +1,5 @@
 resource "aws_instance" "wordpress" {
-  availability_zone = "eu-central-1a"
+  # availability_zone = "eu-central-1a"
   ami               = "ami-076bdd070268f9b8d"
   instance_type     = "t2.micro"
 
